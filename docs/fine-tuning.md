@@ -88,7 +88,7 @@ I have also noticed that LLMs will consistently **_produce assertive, yet false 
 
     
 
-![alt_text](images/image8.jpg "image_tooltip")
+![alt_text](images/image8.png "image_tooltip")
 
 
 
