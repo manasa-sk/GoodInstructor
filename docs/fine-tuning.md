@@ -30,7 +30,7 @@ You have 3 H1 headings. You may want to use the "H1 -> H2" option to demote all 
 # **Knowledge Graphs & LLMs: Fine-Tuning Vs. Retrieval-Augmented Generation**
 
 
-## What are the limitations of LLMs, and how to overcome them
+**What are the limitations of LLMs, and how to overcome them**
 
 
 ![alt_text](images/image6.png "image_tooltip")
@@ -101,8 +101,7 @@ Since the response by ChatGPT is assertive, you might expect it to be accurate. 
 Of course, LLMs have other problems, like bias, prompt injection, and others. However, we will not talk about them here. Instead, in this blog post, we will present and focus on the **_concepts of fine-tuning and retrieval-augmented LLMs_** and evaluate their pros and cons.
 
 
-# 
-**Supervised Fine-Tuning of an LLM**
+# **Supervised Fine-Tuning of an LLM**
 
 
 Explaining how LLMs are trained is beyond the scope of this blog post. Instead, you can watch this [incredible video by Andrej Karpathy to catch up on LLMs](https://www.youtube.com/watch?v=bZQun8Y4L2A) and learn about the different phases of LLM training.
@@ -276,7 +275,7 @@ On the other hand, you should consider the following limitations when using the 
 * Completely disregarding the internal knowledge of the language model limits the number of questions that can be answered
 * Sometimes LLMs fail to follow instructions, so there is a risk that the context might be ignored or hallucinations occur if no relevant answer data is found in the context.
 
-## **Summary**
+# **Summary**
 
 
 This blog post delves into the limitations of Large Language Models (LLMs), such as
