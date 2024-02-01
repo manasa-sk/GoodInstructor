@@ -163,4 +163,4 @@ As a result, valuable data becomes easier to access, understand, and use for dec
 As the project progresses, our goal will be to develop prototypes for these use cases. We aim to improve the interaction between you, the users, and your connected data using Neo4j and LLMs.
 
 
-Keep an eye out for updates from our team as we progress the development of this project, all of which will be openly documented on our GitHub repository: [https://github.com/neo4j/NaLLM](https://github.com/neo4j/NaLLM)
+Keep an eye out for updates from our team as we progress the development of this project, all of which will be openly documented on our GitHub repository: [https://github.com/manasa-sk/NaLLM](https://github.com/manasa-sk/NaLLM)
