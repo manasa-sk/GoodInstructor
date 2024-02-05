@@ -589,10 +589,10 @@ You have 5 H1 headings. You may want to use the "H1 -> H2" option to demote all 
 <li><em><a href="https://medium.com/neo4j/knowledge-graphs-llms-fine-tuning-vs-retrieval-augmented-generation-30e875d63a35">Fine-tuning vs. Retrieval-augmented generation</a></em></li>
 <li><em><a href="https://medium.com/neo4j/knowledge-graphs-llms-multi-hop-question-answering-322113f53f51">Multi-hop Question Answering</a></em></li>
 </ul>
-<p><img alt="alt_text" src="images/image23.png" title="image_tooltip" /></p>
+<p><img alt="alt_text" src="../images/image23.png" title="image_tooltip" /></p>
 <p>Graph data analyst as imagined by Midjourney.</p>
 <p>Large Language Models (LLMs) have significantly changed data accessibility to the average person. Less than a year ago, accessing the company’s data required technical skills involving proficiency in numerous dashboarding tools or even diving into the intricacies of a database query language. Yet, with the rise of LLMs like ChatGPT, the wealth of knowledge hidden within private databases or accessible via various APIs is now more readily available than ever with the rise of so-called retrieval-augmented LLM applications.</p>
-<p><img alt="alt_text" src="images/image24.png" title="image_tooltip" /></p>
+<p><img alt="alt_text" src="../images/image24.png" title="image_tooltip" /></p>
 <p>Retrieval-augmented generation application. Image by author.</p>
 <p>The idea behind retrieval-augmented applications is to retrieve additional information from various sources to allow the LLM to generate better and more accurate results. It seems OpenAI has also picked up on this trend as they <a href="https://openai.com/blog/function-calling-and-other-api-updates">introduced OpenAI functions</a> recently. The new OpenAI models are trained to use provide parameters to functions (or what other libraries call <a href="https://python.langchain.com/docs/modules/agents/tools/">tools</a>), whose signatures and descriptions are passed in the context, to retrieve additional information at query time if needed.</p>
 <p>We have observed a strong bias for vector similarity search in retrieval-augmented applications. If you opened Twitter or LinkedIn in the past three months, you might have seen the various “Chat with your PDFs” applications. In those examples, the implementation is relatively straightforward. The text is extracted from PDFs, split into chunks if needed, and finally stored in a vector database along with its text embedding representations.</p>
@@ -617,33 +617,33 @@ You have 5 H1 headings. You may want to use the "H1 -> H2" option to demote all 
 <p>Relationships are first-class citizens in native graph databases. Although knowledge graphs allow you to perform typical aggregations and filtering to answer questions like “How many customers did we get this week?”, we will focus more on analytical use cases where traversing the relationships is the main component. One such example is finding the shortest or all possible paths between data points. For example, to answer the question:</p>
 <p><em>Who could introduce me to Emil Eifrem?</em></p>
 <p>We would have to find the shortest path between myself and Emil Eifrem in the graph.</p>
-<p><img alt="alt_text" src="images/image25.png" title="image_tooltip" /></p>
+<p><img alt="alt_text" src="../images/image25.png" title="image_tooltip" /></p>
 <p>Single shortest path. Image by author.</p>
 <p>Another use case where finding the shortest paths in real-time would come in handy is in any sort of transportation, logistics, or routing application. In these applications, you might want to evaluate the top N shortest paths to ensure some fallback plan if something unexpected happens.</p>
-<p><img alt="alt_text" src="images/image26.png" title="image_tooltip" /></p>
+<p><img alt="alt_text" src="../images/image26.png" title="image_tooltip" /></p>
 <p>Top two shortest paths between stops in Rome. Image by author.</p>
 <p>This image visualizes the top 2 shortest paths between two stops in Rome. Such shortest paths could be optimized for distance, time, cost, or a combination.</p>
 <p>Another domain where finding paths between data points in your LLM applications is the biomedical domain. In the biomedical domain, you are dealing with genes, proteins, diseases, drugs, and more. What’s perhaps more important is that these entities do not exist in isolation but have complex, often multilayered relationships with each other.</p>
 <p>For instance, a gene may be associated with multiple diseases, a protein may interact with numerous other proteins, a disease might be treatable by a variety of drugs, and a drug could have multiple effects on different genes and proteins.</p>
 <p>Given the staggering amount of biomedical data available, the number of potential relationships between these data points is enormous and is a great candidate to be represented as a knowledge graph.</p>
-<p><img alt="alt_text" src="images/image27.png" title="image_tooltip" /></p>
+<p><img alt="alt_text" src="../images/image27.png" title="image_tooltip" /></p>
 <p>All shortest paths between Crohn’s disease and ALOX5 gene using <a href="https://het.io/">Hetionet dataset</a>. Image by author.</p>
 <p>Biomedical knowledge graph can support LLM applications where users are be interested in answering questions like</p>
 <p><em>How is ALOX5 gene related to Crohn’s disease?</em></p>
 <p>While most LLM applications we see today generate answers as a natural language, there is also an excellent opportunity for returning responses in the form of line, bar, or even network visualizations. Often the LLM can even return the configuration structure needed for the charting libraries.</p>
 <h1 id="information-propagating-through-network"><strong>Information Propagating Through Network</strong></h1>
 <p>Another strong knowledge graph fit is domains with networks of dependencies. For example, you could have a knowledge graph containing the complete <a href="https://neo4j.com/use-cases/network-and-it-operations/">microservice architecture of your system</a>. Such a knowledge graph would allow you to power a DevOps chatbot that would enable you to evaluate the architecture in real-time and perform what-if analysis.</p>
-<p><img alt="alt_text" src="images/image28.png" title="image_tooltip" /></p>
+<p><img alt="alt_text" src="../images/image28.png" title="image_tooltip" /></p>
 <p>Microservices &amp; People graph. Screenshot from <a href="https://www.youtube.com/watch?v=_qakAUjXiek&amp;t=2517s">https://www.youtube.com/watch?v=_qakAUjXiek&amp;t=2517s</a></p>
 <p>Also Rhys Evans presented how the <a href="https://www.youtube.com/watch?v=6vblSC1kShI">Financial Times manages their infrastructure as a graph</a>.</p>
 <p>Another domain that comes to mind is the supply chain.</p>
-<p><img alt="alt_text" src="images/image29.png" title="image_tooltip" /></p>
+<p><img alt="alt_text" src="../images/image29.png" title="image_tooltip" /></p>
 <p>Incorporating <a href="https://neo4j.com/use-cases/supply-chain-management/">supply chain data into knowledge graphs</a> can significantly enhance the capabilities of large language applications. This approach allows us to structure complex supply chain information into nodes and relationships, thereby generating a holistic picture of how materials, components, and products flow from suppliers to customers. The inherent interconnections and dependencies become evident and analyzable.</p>
 <p>For language applications, this enables deeper context understanding and knowledge generation. For instance, an AI model like ChatGPT can leverage this data structure to produce more accurate and insightful responses about supply chain scenarios, disruptions, or management strategies. It could comprehend and explain the ripple effects of a shortage of a certain component, predict potential bottlenecks, or suggest optimization strategies.</p>
 <p><em>By aligning the intricacies of supply chain dynamics with the cognitive abilities of AI, we can bolster the functionality and value of large language applications in a multitude of industrial and commercial contexts.</em></p>
 <h1 id="social-network-analysis-and-data-science"><strong>Social Network Analysis and Data Science</strong></h1>
 <p>What if your company chatbot went beyond documentation and helped deliver insights and recommendations as part of the people analytics?</p>
-<p><img alt="alt_text" src="images/image30.png" title="image_tooltip" /></p>
+<p><img alt="alt_text" src="../images/image30.png" title="image_tooltip" /></p>
 <p><a href="https://neo4j.com/use-cases/master-data-management/">Knowledge graphs in HCM</a> can serve as an invaluable tool in driving people analytics within a company, primarily by creating a robust, interconnected system of information that allows for a deep, holistic understanding of employee behavior, skills, competencies, interactions, and performance. Essentially, a knowledge graph captures and links complex employee data — including demographic information, role history, project involvement, performance indicators, and skillsets — allowing for multi-faceted analysis.</p>
 <p>This combination of connected data and ML powered tools enable human resources and team leaders to uncover hidden patterns, identify high-potential individuals, predict future performance, assess skill gaps, and inform training needs, thereby fueling data-driven decision-making. By leveraging a knowledge graph, companies can streamline talent management and development processes, enhancing overall organizational effectiveness and fostering a culture of continuous learning and improvement.</p>
 <p>Incorporating a chatbot interface into this knowledge graph-driven people analytics system could revolutionize the way companies approach HR and talent management. Here’s how:</p>
